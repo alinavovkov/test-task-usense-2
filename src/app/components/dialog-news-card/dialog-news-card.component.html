@@ -1,0 +1,8 @@
+<h2 mat-dialog-title> {{ data.title }} </h2>
+<mat-dialog-content>
+    <p> <b>Author:</b> {{ data.author || 'Unknown' }}</p>
+    <span> {{ data.description }} </span>
+</mat-dialog-content>
+<mat-dialog-actions>
+    <button mat-button (mat-dialog-close)="close()" cdkFocusInitial>Ok</button>
+</mat-dialog-actions>
